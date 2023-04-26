@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: transparent;
+}
+
+.logo-container img {
+  width: 450px;
+}
+
+.news-btn {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.news-btn:hover {
+  background-color: darkgreen;
+}
+
+body {
+  background: url(/images/Home\ Image.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  font-family: poppins;
+  height: 100vh;
+  width: 100%;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  opacity: 0;
+  text-align: left;
+  transform: translate(-50%, -50%);
+}
+
+span {
+  color: darkgreen;
+}
+
+.text-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 600px;
+  height: 200px;
+}
+
+.text1,
+.text2 {
+  position: absolute;
+  font-size: 100px;
+  top: 0;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.text1 {
+  animation: fadeinout 6s infinite;
+}
+
+.text2 {
+  animation: fadeinout 6s infinite 3s;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.mtng-btn {
+  font-size: 15px;
+  margin-top: 250px;
+  margin-left: 120px;
+  border: 0px;
+  padding: 5px 20px;
+  border-radius: 5px 5px;
+}
+
+.mtng-btn:hover {
+  background-color: rgba(0, 100, 0, 0.568);
+  cursor: pointer;
+}
+
+.other {
+  flex-basis: 30%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-family: poppins;
+  height: 100vh;
+  width: 100%;
+  padding-bottom: 250px;
+}
+
+.other div {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px;
+}
+
+.other h2,
+.other p {
+  display: inline-block;
+  margin: 0;
+}
+
+.other h2 {
+  font-size: 100px;
+}
+
+.other p {
+  font-size: 15px;
+}
